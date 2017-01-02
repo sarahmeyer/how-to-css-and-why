@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Proxima Nova";
+  font-weight: 200;
+  color: white;
+  background-color: red;
+}
+
+h1 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slide {
+  height: 0;
+  width: 0;
+  display: none;
+  text-align: center;
+}
+
+.slide.visible-slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.margin-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+img {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 48px;
+  color: blue;
+  text-align: center;
+}
+
+ol,
+ul {
+  text-align: left;
+  margin-right: 2rem;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  list-style-position: inside;
+}
+
+pre {
+  background-color: #f4f7f8;
+  padding: 1rem;
+  color: black;
+  text-align: justify;
+}
+
+h1 pre,
+h2 pre,
+h3 pre,
+h4 pre,
+h5 pre,
+li pre,
+p pre {
+  display: inline-block;
+}
