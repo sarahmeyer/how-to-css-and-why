@@ -12,32 +12,28 @@
   <body>
     <div class="content" id="content">
       <div class="slide visible-slide">
-        <h1 class="yellow-text" style="font-size: 64px; margin-top: 120px">
+        <h1 class="yellow-text">
           How to CSS...
         </h1>
-        <h1 class="yellow-text" style="font-size: 64px; margin-top: 20px">
+        <h1 class="yellow-text">
           ...and Why
         </h1>
       </div>
 
-      <div class="slide" style="text-align: center; font-size: 24px;">
-        <h3 class="white-text" style="margin-top: 20vh;">
+      <div class="slide">
+        <h3>
           Who's talking?
         </h3>
-        <h1 class="white-text blue-background" style-"font-size: 48px;">
+        <h2>
           Sarah Saltrick Meyer
-        </h1>
+        </h2>
 
-        <p class="yellow-text">
+        <h3 class="yellow-text">
           Twitter: @meyerini
           <span style="font-size: 36px;">
             💁
           </span>
-        </p>
-
-        <h2 class="white-text red-background " style="margin-top: 15px; font-size: 72px;">
-          BuzzFeed
-        </h2>
+        </h3>
       </div>
 
       <div class="slide">
@@ -53,6 +49,7 @@
       </div>
 
       <div class="slide">
+        <h2>What's so hard about that?</h2>
         <ol>
           <li>
             Finding where to make the change.
@@ -61,6 +58,7 @@
       </div>
 
       <div class="slide">
+        <h2>What's so hard about that?</h2>
         <ol>
           <li>
             Finding where to make the change.
@@ -72,6 +70,7 @@
       </div>
 
       <div class="slide">
+        <h2>What's so hard about that?</h2>
         <ol>
           <li>
             Finding where to make the change.
@@ -90,7 +89,7 @@
         <pre>
           .header .nav .nav-right .item-group .nav-item .button {
             color: blue;
-            margin-right: 15px;
+            margin-right: 1rem;
           }
         </pre>
       </div>
@@ -100,7 +99,7 @@
         <pre>
           .header .nav .nav-right .item-group .nav-item .button {
             color: blue;
-            margin-right: 15px;
+            margin-right: 1rem;
           }
         </pre>
       </div>
@@ -130,21 +129,40 @@
       </div>
 
       <div class="slide">
+        <h2>CSS Specificity in 1 Slide</h2>
         <ol>
           <li>
-            Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+            Type selectors (e.g., <code>h1</code>) and pseudo-elements (e.g., <code>:before</code>).
           </li>
           <li>
-            Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+            Class selectors (e.g., <code>.example</code>), attributes selectors (e.g., <code>[type="radio"]</code>) and pseudo-classes (e.g., <code>:hover</code>).
           </li>
           <li>
-            ID selectors (e.g., #example).
+            ID selectors (e.g., <code>#example</code>).
           </li>
         </ol>
-        <p>Universal selector (*), combinators (+, >, ~, ' ') and negation pseudo-class (:not()) have no effect on specificity. (The selectors declared inside :not() do, however.)</p>
-        <p>Inline styles added to an element (e.g., style="font-weight:bold") always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.</p>
-        <p>When an <strong>important</strong> rule is used on a style declaration, this declaration overrides any other declarations.</p>
         <p><em>Source: MDN</em></p>
+      </div>
+
+      <div class="slide">
+        <h2>I lied, it totally takes 2 slides.</h2>
+        <div class="white-area">
+          <p>Universal selector (<code>*</code>), combinators (<code>+</code>, <code>></code>, <code>~</code>, <code>' '</code>) and negation pseudo-class (<code>:not()</code>) have no effect on specificity. (The selectors declared inside <code>:not()</code> do, however.)</p>
+          <p>Inline styles added to an element (e.g., <code>style="font-weight:bold"</code>) always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.</p>
+          <p>When an <code>!important</code> rule is used on a style declaration, this declaration overrides any other declarations.</p>
+          <p><em>Source: MDN</em></p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <h2>DRY</h2>
+        <p>"Don't Repeat Yourself" is a programming maxim we've probably all learned.</p>
+      </div>
+
+      <div class="slide">
+        <h2>DRY</h2>
+        <p>"Don't Repeat Yourself" is a programming maxim we've probably all learned.</p>
+        <h3>Forget it while you're writing CSS.</h3>
       </div>
 
       <div class="slide">
@@ -152,15 +170,16 @@
       </div>
 
       <div class="slide">
+        <h2>BEM Syntax</h2>
         <ol>
           <li>
-            Block
+            Block: <code>navigation</code>
           </li>
           <li>
-            Element
+            Element: <code>navigation__list-item</code>
           </li>
           <li>
-            Modifier
+            Modifier: <code>navigation__list-item--disabled</code>
           </li>
         </ol>
       </div>
@@ -175,15 +194,16 @@
       </div>
 
       <div class="slide">
+        <h2>CEM Syntax</h2>
         <ol>
           <li>
-            Component
+            Component: <code>navigation</code>
           </li>
           <li>
-            Element
+            Element: <code>navigation__list-item</code>
           </li>
           <li>
-            Modifier
+            Modifier: <code>navigation__list-item--disabled</code>
           </li>
         </ol>
       </div>
@@ -193,17 +213,18 @@
       </div>
 
       <div class="slide">
-        <h2><pre>!important</pre> is not your friend.</h2>
+        <h2><code>!important</code> is not your friend.</h2>
       </div>
 
       <div class="slide">
-        <h2><pre>!important</pre> is not your friend.</h2>
+        <h2><code>!important</code> is not your friend.</h2>
         <h3>We should avoid using it, even (especially) in Solid.</h3>
       </div>
 
       <div class="slide">
         <h2>Sidebar: Learnings from React</h2>
         <h3>Inline styles are cool again</h3>
+        <p>Truly component-based styles might make future migrations to or from React apps easier.</p>
       </div>
 
       <div class="slide">
@@ -212,6 +233,11 @@
 
       <div class="slide">
         <h2>No CSS packaging solution is going to work if our CSS has no organizing principle.</h2>
+        <p>Modern front-end build tools muddy the waters of the global CSS namespace. Developer discipline can help.</p>
+      </div>
+
+      <div class="slide">
+        <h2>Separation of concerns, unity of structure</h2>
         <p>Every dev in the front end should be able to figure out the answer to the question "Where do I make this CSS change?" without even thinking about it.</p>
       </div>
 
@@ -222,10 +248,13 @@
             BEM (CEM) syntax
           </li>
           <li>
-            <pre>!important</pre> is a code smell
+            <code>!important</code> is a code smell
           </li>
           <li>
             Pay attention to the depth of SCSS nesting
+          </li>
+          <li>
+            One SCSS file per template. <code>side-bar/side-bar.html</code> should have a corresponding SCSS file in <code>side-bar/side-bar.scss</code>.
           </li>
         </ol>
       </div>
